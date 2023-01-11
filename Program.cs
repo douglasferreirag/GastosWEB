@@ -1,6 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Gastos.Context;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<GastosContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+
+builder.Services.AddControllersWithViews();builder.Services.AddDbContext<GastosContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
