@@ -1,0 +1,89 @@
+@model Gastos.Models.Fornecedor
+
+@{
+
+        ViewData["Title"] = "Detalhes do registro de fornecedor";
+
+
+}
+
+<h1> Detalhes </h1>
+
+
+<table class = "table">
+
+        <thead>
+
+              <tr>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Codigo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Descricao)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Local)
+
+                  </th>
+
+                   
+
+                  
+
+                  <th></th>
+
+            </tr>
+
+            
+
+        </thead>
+
+        <tbody>
+
+            
+                      <tr>
+
+                          <td>
+
+                                @Html.DisplayFor(model  => model.Codigo)
+
+                         <td>
+
+                                 @Html.DisplayFor(model  => model.Descricao)   
+
+                         </td>
+
+                           <td>
+
+                                 @Html.DisplayFor(model  => model.Local)   
+
+                         </td>
+
+                       
+
+                         <td>
+
+
+                         
+                          </td>
+
+                          
+                      </tr>
+
+
+              
+
+        </tbody>
+
+</table>
+
+<a asp-action = "Editar" asp - route-id = "@Model.Codigo">Editar</a> |
+<a asp-action = "Index">Voltar</a>

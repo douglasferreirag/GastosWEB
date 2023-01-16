@@ -1,0 +1,73 @@
+@model Gastos.Models.Fornecedor
+
+@{
+
+    ViewData["Title"] = "Criar novo registro de fornecedor";
+
+}
+
+<h1>Criar novo registro de fornecedor</h1>
+
+<br/>
+
+<div class = "row">
+
+      <div class = "row-md-4">
+
+          <form asp-action = "criar">
+
+            <div class = "form--group">
+
+                      <label asp-for = "Codigo" class = "control-label"></label>
+
+                       <input asp-for = "Codigo" class = "form-control " readonly = "true" value = "@ViewBag.codigo"  > 
+
+                        <br/>                  
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "Descricao" class = "control-label"></label>
+
+                       <input asp-for = "Descricao" class = "form-control"/>
+
+                        <br/>                  
+
+              </div>
+
+                <div class = "form--group">
+
+                      <label asp-for = "Local" class = "control-label"></label>
+
+                       <input asp-for = "Local" class = "form-control"/>
+
+                        <br/>
+
+                </div>
+
+
+             
+
+              
+              <div class = "form-group">
+
+                      <input type = "submit"  value = "Criar" class = "btn  btn-primary"/>
+
+              </div>
+
+              
+
+          </form>
+
+      </div>
+
+
+</div>
+
+</hr>
+<br>
+
+ 
+<a asp-action = "Index" >Voltar </a>
+
