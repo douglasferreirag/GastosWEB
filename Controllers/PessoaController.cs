@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Gastos.Controllers
 {
-    public class FornecedorController : Controller
+    public class PessoaController: Controller
     {
 
 
             private readonly GastosContext _context;
 
-            public FornecedorController(GastosContext context){
+            public PessoaController(GastosContext context){
 
                         _context = context;
 
@@ -25,9 +25,9 @@ namespace Gastos.Controllers
 
             public IActionResult Index(){
 
-                       var fornecedores = _context.Fornecedores.ToList();
+                       var pessoa = _context.Pessoas.ToList();
 
-                        return View(fornecedores);
+                        return View(pessoa);
                       
             }
 
@@ -42,11 +42,11 @@ namespace Gastos.Controllers
             }
 
             [HttpPost]
-            public IActionResult Criar(Fornecedor fornecedor){
+            public IActionResult Criar(Pessoa pessoa){
 
                     if(ModelState.IsValid){
 
-                        _context.Fornecedores.Add(fornecedor);
+                        _context.Pessoas.Add(pessoa);
 
                         _context.SaveChanges();
 
@@ -55,22 +55,22 @@ namespace Gastos.Controllers
 
                      }
 
-                    return View(fornecedor);
+                    return View(pessoa);
 
             }
 
             public IActionResult Editar (string Codigo){
 
 
-                    var fornecedor = _context.Fornecedores.Find(Codigo);
+                    var pessoa= _context.Pessoas.Find(Codigo);
 
                   
 
-                    if(fornecedor == null)
+                    if(pessoa== null)
 
                         return RedirectToAction(nameof (Index));
 
-                    return View(fornecedor);  
+                    return View(pessoa);  
 
                     
 
@@ -84,19 +84,19 @@ namespace Gastos.Controllers
             
 
             [HttpPost]
-              public IActionResult Editar(Fornecedor fornecedor) 
+              public IActionResult Editar(Pessoa pessoa) 
              {
                 
-                      var fornecedorBanco = _context.Fornecedores.Find(fornecedor.Codigo);
+                      var pessoaBanco = _context.Pessoas.Find(pessoa.Codigo);
 
-                       fornecedorBanco.Codigo = fornecedor.Codigo;
+                       pessoaBanco.Codigo = pessoa.Codigo;
 
-                        fornecedorBanco.Descricao = fornecedor.Descricao;
+                        pessoaBanco.Nome = pessoa.Nome;
 
-                       fornecedorBanco.Local= fornecedor.Local;
+                       pessoaBanco.Sobrenome= pessoa.Sobrenome;
 
 
-                        _context.Fornecedores.Update(fornecedorBanco);
+                        _context.Pessoas.Update(pessoaBanco);
 
                         _context.SaveChanges();
 
@@ -106,28 +106,28 @@ namespace Gastos.Controllers
 
              public IActionResult Detalhes(string Codigo){
 
-                       var fornecedor = _context.Fornecedores.Find(Codigo);
+                       var pessoa= _context.Pessoas.Find(Codigo);
 
-                       if (fornecedor == null)
+                       if (pessoa == null)
 
                             return RedirectToAction(nameof (Index));
 
-                        return View(fornecedor);
+                        return View(pessoa);
 
             }
 
             public IActionResult Deletar(string Codigo){
 
 
-                       var fornecedor= _context.Fornecedores.Find (Codigo);
+                       var pessoa= _context.Pessoas.Find (Codigo);
 
                      //  
 
-                       if (fornecedor == null)
+                       if (pessoa == null)
 
                             return RedirectToAction(nameof (Index));
 
-                        return View(fornecedor);
+                        return View(pessoa);
 
             }
 
@@ -136,13 +136,13 @@ namespace Gastos.Controllers
              
              
                 [HttpPost]
-                public IActionResult Deletar( Fornecedor fornecedor){
+                public IActionResult Deletar( Pessoa pessoa){
 
                       
 
-                        var fornecedorBanco = _context.Fornecedores.Find(fornecedor.Codigo);
+                        var pessoaBanco = _context.Pessoas.Find(pessoa.Codigo);
 
-                        _context.Fornecedores.Remove(fornecedorBanco);
+                        _context.Pessoas.Remove(pessoaBanco);
 
                         _context.SaveChanges();
 

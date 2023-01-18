@@ -38,6 +38,24 @@ namespace Gastos.Migrations
 
                     b.ToTable("Fornecedores");
                 });
+
+            modelBuilder.Entity("Gastos.Models.Pessoa", b =>
+                {
+                    b.Property<string>("Codigo")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Codigo");
+
+                    b.ToTable("Pessoas");
+                });
 #pragma warning restore 612, 618
         }
     }

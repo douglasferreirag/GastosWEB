@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gastos.Migrations
 {
     [DbContext(typeof(GastosContext))]
-    [Migration("20230118011723_CriacaoTabelaPessoa")]
+    [Migration("20230118015553_CriacaoTabelaPessoa")]
     partial class CriacaoTabelaPessoa
     {
         /// <inheritdoc />
@@ -40,6 +40,24 @@ namespace Gastos.Migrations
                     b.HasKey("Codigo");
 
                     b.ToTable("Fornecedores");
+                });
+
+            modelBuilder.Entity("Gastos.Models.Pessoa", b =>
+                {
+                    b.Property<string>("Codigo")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sobrenome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Codigo");
+
+                    b.ToTable("Pessoas");
                 });
 #pragma warning restore 612, 618
         }
