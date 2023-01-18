@@ -1,0 +1,89 @@
+@model Gastos.Models.Pessoa
+
+@{
+
+        ViewData["Title"] = "Detalhes do registro de pessoa";
+
+
+}
+
+<h1> Detalhes </h1>
+
+
+<table class = "table">
+
+        <thead>
+
+              <tr>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Codigo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Nome)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Sobrenome)
+
+                  </th>
+
+                   
+
+                  
+
+                  <th></th>
+
+            </tr>
+
+            
+
+        </thead>
+
+        <tbody>
+
+            
+                      <tr>
+
+                          <td>
+
+                                @Html.DisplayFor(model  => model.Codigo)
+
+                         <td>
+
+                                 @Html.DisplayFor(model  => model.Nome)   
+
+                         </td>
+
+                           <td>
+
+                                 @Html.DisplayFor(model  => model.Sobrenome)   
+
+                         </td>
+
+                       
+
+                         <td>
+
+
+                         
+                          </td>
+
+                          
+                      </tr>
+
+
+              
+
+        </tbody>
+
+</table>
+
+<a asp-action = "Editar" asp - route-id = "@Model.Codigo">Editar</a> |
+<a asp-action = "Index">Voltar</a>

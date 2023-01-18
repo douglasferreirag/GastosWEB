@@ -17,6 +17,9 @@ namespace Gastos.Models
             [Required]
             public string Nome { get; set; }
 
+            [Required]
+            public string  Sobrenome { get; set; }
+
 
     }
 }

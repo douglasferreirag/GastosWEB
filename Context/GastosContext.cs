@@ -18,5 +18,8 @@ namespace Gastos.Context
             }
 
          public DbSet<Fornecedor> Fornecedores{ get; set; }
+
+          public DbSet<Pessoa> Pessoas{ get; set; }
+
     }
 }
