@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gastos
 build_property.RootNamespace = Gastos
-build_property.ProjectDir = C:\Users\Douglas\Documents\Projetos\Gastos\
+build_property.ProjectDir = c:\Users\Douglas\Documents\Projetos\Gastos\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Douglas\Documents\Projetos\Gastos
+build_property.MSBuildProjectDirectory = c:\Users\Douglas\Documents\Projetos\Gastos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Criar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDcmlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Deletar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Deletar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxEZWxldGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Detalhes.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxEZXRhbGhlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Editar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Index.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Home/Index.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Home/Privacy.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Criar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Deletar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Deletar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERlbGV0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Detalhes.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXERldGFsaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Editar.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Index.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Pessoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/Error.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/_ViewImports.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/_ViewStart.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/_Layout.cshtml]
+[c:/Users/Douglas/Documents/Projetos/Gastos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5cc3ppcd81
