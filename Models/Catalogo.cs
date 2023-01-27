@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Gastos.Models;
 
-namespace Gastos.Controllers
+namespace Gastos.Models
 {
     public class Catalogo
     {

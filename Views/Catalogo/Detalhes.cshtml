@@ -1,0 +1,113 @@
+@model Gastos.Models.Catalogo
+
+@{
+
+        ViewData["Title"] = "Detalhes do registro de catálogo";
+
+
+}
+
+<h1> Detalhes </h1>
+
+
+<table class = "table">
+
+        <thead>
+
+              <tr>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Codigo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Descricao)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.ValorUnitario)
+
+                  </th>
+
+                   <th>
+
+                        @Html.DisplayNameFor(model  => model.CodigoFornecedor)
+
+                  </th>
+
+                   <th>
+
+                        @Html.DisplayNameFor(model  => model.Data)
+
+                  </th>
+
+                   
+
+                  
+
+                  <th></th>
+
+            </tr>
+
+            
+
+        </thead>
+
+        <tbody>
+
+            
+                      <tr>
+
+                          <td>
+
+                                @Html.DisplayFor(model  => model.Codigo)
+
+                         <td>
+
+                                 @Html.DisplayFor(model  => model.Descricao)   
+
+                         </td>
+
+                           <td>
+
+                                 @Html.DisplayFor(model  => model.ValorUnitario)   
+
+                         </td>
+
+                          <td>
+
+                                 @Html.DisplayFor(model  => model.CodigoFornecedor)   
+
+                         </td>
+
+                          <td>
+
+                                 @Html.DisplayFor(model  => model.Data)   
+
+                         </td>
+
+                       
+
+                         <td>
+
+
+                         
+                          </td>
+
+                          
+                      </tr>
+
+
+              
+
+        </tbody>
+
+</table>
+
+<a asp-action = "Editar" asp - route-id = "@Model.Codigo">Editar</a> |
+<a asp-action = "Index">Voltar</a>

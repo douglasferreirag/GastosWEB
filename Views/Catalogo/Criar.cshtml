@@ -1,0 +1,108 @@
+@model Gastos.Models.Catalogo
+
+@{
+
+    ViewData["Title"] = "Criar novo registro de catálogo";
+
+}
+
+<h1>Criar novo registro de catálogo</h1>
+
+<br/>
+
+<div class = "row">
+
+      <div class = "row-md-4">
+
+          <form asp-action = "criar">
+
+              <div class = "form--group">
+
+                      <label asp-for = "Codigo" class = "control-label"></label>
+
+                       <input asp-for = "Codigo" class = "form-control " readonly = "true" value = "@ViewBag.codigo"  > 
+
+                        <br/>                  
+
+              </div>
+
+               <div class = "form--group">
+
+                      <label asp-for = "Descricao" class = "control-label"></label>
+
+                       <input asp-for = "Descricao" class = "form-control"/>
+
+                        <br/>                  
+
+              </div>
+
+               <div class = "form--group">
+
+                      <label asp-for = "ValorUnitario" class = "control-label"></label>
+
+                       <input type = "number" step = "0.01" placeholder="0.00" asp-for = "ValorUnitario" class = "form-control"/>
+
+                        <br/>                  
+
+                </div>
+
+                
+
+
+
+              <div class = "form--group">
+
+                      <label asp-for = "CodigoFornecedor" class = "control-label"></label>
+
+                       <select asp-for = "CodigoFornecedor" class = "form-control">
+
+                              <option>Selecione</option>
+
+                              @foreach (var item in ViewBag.cartas) 
+                             {
+
+                                      <option> @item.Codigo</option>
+                                      
+
+                              
+                            }
+
+                       </select>
+
+                        <br/>     
+
+              </div>
+
+                <div class = "form--group">
+
+                      <label asp-for = "Data" class = "control-label"></label>
+
+                       <input  type = "Date" placeholder="dd/MM/AAAA" asp-for = "Data" class = "form-control"/>
+
+                        <br/>     
+
+              </div>
+
+              
+               
+              
+              <div class = "form-group">
+
+                      <input type = "submit"  value = "Criar" class = "btn  btn-primary"/>
+
+              </div>
+
+              
+
+          </form>
+
+      </div>
+
+
+</div>
+
+</hr>
+<br>
+
+ 
+<a asp-action = "Index" >Voltar </a>

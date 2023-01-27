@@ -21,5 +21,7 @@ namespace Gastos.Context
 
           public DbSet<Pessoa> Pessoas{ get; set; }
 
+          public DbSet<Catalogo> Catalogo{ get; set; }
+
     }
 }

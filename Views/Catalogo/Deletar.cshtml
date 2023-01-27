@@ -1,0 +1,83 @@
+@model Gastos.Models.Catalogo
+
+@{
+
+    ViewData["Title"] = "Deletar um registro de catálogo";
+
+}
+
+<h1>Deletar registro de catálogo</h1>
+
+<br/>
+
+<div class = "row">
+
+      <div class = "row-md-4">
+
+          <form asp-action = "deletar">
+
+              <div class = "form--group">
+
+                      <label asp-for = "Codigo" class = "control-label"></label>
+
+                       <input asp-for = "Codigo" class = "form-control"/>
+
+              </div>
+
+                <div class = "form--group">
+
+                      <label asp-for = "Descricao" class = "control-label"></label>
+
+                       <input asp-for = "Descricao" class = "form-control"/>
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "ValorUnitario" class = "control-label"></label>
+
+                       <input asp-for = "ValorUnitario" class = "form-control"/>
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "CodigoFornecedor" class = "control-label"></label>
+
+                       <input asp-for = "CodigoFornecedor" class = "form-control"/>
+
+              </div>
+
+             <div class = "form--group">
+
+                      <label asp-for = "Data" class = "control-label"></label>
+
+                       <input asp-for = "Data" class = "form-control"/>
+
+              </div> 
+
+              <br>
+
+              <div class = "form-group">
+
+                      <input type = "submit"  value = "Deletar" class = "btn  btn-primary"/>
+
+              </div>
+
+          </form>
+
+      </div>
+
+
+</div>
+
+</hr>
+<br>
+
+<div>
+
+    <a asp-action = "Index" >Voltar </a>
+
+</div>
+
+

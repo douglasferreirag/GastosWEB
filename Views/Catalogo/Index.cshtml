@@ -1,0 +1,127 @@
+@model IEnumerable<Gastos.Models.Catalogo>
+
+@{
+
+      ViewData["Title"] = "Listagem de catálogo";
+
+}
+
+<h2>Fornecedores</h2>
+
+<p><a asp-action = "Criar">Novo registro de catálogo</a></p>
+
+
+
+<table class = "table">
+
+        <thead>
+
+              <tr>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Codigo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Descricao)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.ValorUnitario)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.CodigoFornecedor)
+
+                  </th>
+
+                   <th>
+
+                        @Html.DisplayNameFor(model  => model.Data)
+
+                  </th>
+
+                  
+
+                  
+
+                  <th></th>
+
+            </tr>
+
+            
+
+        </thead>
+
+        <tbody>
+
+              @foreach (var item in Model)
+              {
+                
+                        <tr>
+
+                                    <td>
+
+                                           @Html.DisplayFor(model  => item.Codigo)
+
+                               
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.Descricao)   
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.ValorUnitario)
+
+
+                                    </td>
+
+                                      <td>
+
+                                          @Html.DisplayFor(model  => item.CodigoFornecedor)
+
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.Data)
+
+
+                                    </td>
+
+                         
+
+                                    <td>
+
+                                           
+                                          <a asp-action = "Editar" asp-route-Codigo= "@item.Codigo" >Editar</a> |
+                                          <a asp-action = "Detalhes" asp-route-Codigo = "@item.Codigo">Detalhes</a> |
+                                          <a asp-action = "Deletar" asp-route-Codigo = "@item.Codigo">Deletar</a> 
+                                    
+                                    </td>
+
+                        </tr>
+
+
+              }
+
+        </tbody>
+
+</table>
+
+  
+
+  
