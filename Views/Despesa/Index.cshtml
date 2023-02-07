@@ -1,14 +1,14 @@
-@model IEnumerable<Gastos.Models.Catalogo>
+@model IEnumerable<Gastos.Models.Despesa>
 
 @{
 
-      ViewData["Title"] = "Listagem de catálogo";
+      ViewData["Title"] = "Listagem de despesa";
 
 }
 
-<h2>Catálogo</h2>
+<h2>Despesa</h2>
 
-<p><a asp-action = "Criar">Novo registro de catálogo</a></p>
+<p><a asp-action = "Criar">Novo registro de despesa</a></p>
 
 
 
@@ -32,13 +32,19 @@
 
                   <th>
 
-                        @Html.DisplayNameFor(model  => model.ValorUnitario)
+                        @Html.DisplayNameFor(model  => model.Valor)
+
+                  </th>
+
+                    <th>
+
+                        @Html.DisplayNameFor(model  => model.Desconto)
 
                   </th>
 
                   <th>
 
-                        @Html.DisplayNameFor(model  => model.CodigoFornecedor)
+                        @Html.DisplayNameFor(model  => model.CodigoPessoa)
 
                   </th>
 
@@ -83,14 +89,21 @@
 
                                     <td>
 
-                                          @Html.DisplayFor(model  => item.ValorUnitario)
+                                          @Html.DisplayFor(model  => item.Valor)
 
 
                                     </td>
 
                                       <td>
 
-                                          @Html.DisplayFor(model  => item.CodigoFornecedor)
+                                          @Html.DisplayFor(model  => item.Desconto)
+
+
+                                    </td>
+
+                                      <td>
+
+                                          @Html.DisplayFor(model  => item.CodigoPessoa)
 
 
                                     </td>

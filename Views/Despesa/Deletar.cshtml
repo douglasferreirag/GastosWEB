@@ -1,12 +1,12 @@
-@model Gastos.Models.Catalogo
+@model Gastos.Models.Despesa
 
 @{
 
-    ViewData["Title"] = "Deletar um registro de catálogo";
+    ViewData["Title"] = "Deletar um registro de despesa";
 
 }
 
-<h1>Deletar registro de catálogo</h1>
+<h1>Deletar registro de despesa</h1>
 
 <br/>
 
@@ -34,17 +34,25 @@
 
               <div class = "form--group">
 
-                      <label asp-for = "ValorUnitario" class = "control-label"></label>
+                      <label asp-for = "Valor" class = "control-label"></label>
 
-                       <input asp-for = "ValorUnitario" class = "form-control" readonly = "true"/>
+                       <input asp-for = "Valor" class = "form-control" readonly = "true"/>
+
+              </div>
+
+               <div class = "form--group">
+
+                      <label asp-for = "Desconto" class = "control-label"></label>
+
+                       <input asp-for = "Desconto" class = "form-control" readonly = "true"/>
 
               </div>
 
               <div class = "form--group">
 
-                      <label asp-for = "CodigoFornecedor" class = "control-label"></label>
+                      <label asp-for = "CodigoPessoa" class = "control-label"></label>
 
-                       <input asp-for = "CodigoFornecedor" class = "form-control" readonly = "true"/>
+                       <input asp-for = "CodigoPessoa" class = "form-control" readonly = "true"/>
 
               </div>
 

@@ -9,28 +9,32 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Gastos.Models
 {
-    public class Catalogo
+    public class Despesa
     {
-
+        
             [Key]
-             public string Codigo { get; set; }
+            public string Codigo { get; set; }
 
-            [Required]
+
+             [Required]
             public string Descricao { get; set; }
 
             [Required]
-            public double  ValorUnitario{ get; set; }
+            public double  Valor{ get; set; }
+
+            [Required]
+            public double Desconto {get; set; }
 
             [Required]
             [DataType(DataType.Date)]
             [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-            public  DateTime Data { get; set; }
+            public  DateTime Data { get; set; }    
 
-
-             [ForeignKey("Fornecedor"), Column(Order = 1)]
+            [ForeignKey("Pessoa"), Column(Order = 1)]
             [Required]
-            public string CodigoFornecedor{ get; set; }
-            public virtual Fornecedor fornecedor{ get; set; }
-        
+            public string CodigoPessoa{ get; set; }
+            public virtual Pessoa pessoa{ get; set; }
+
+
     }
 }

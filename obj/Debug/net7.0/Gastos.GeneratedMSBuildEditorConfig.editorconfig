@@ -28,8 +28,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29cRGV0YWxoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Catalogo/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Douglas/Documents/Projetos/Gastos/Views/Catalogo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Despesa/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYVxDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Despesa/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYVxEZWxldGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Despesa/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYVxEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Despesa/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Douglas/Documents/Projetos/Gastos/Views/Despesa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Douglas/Documents/Projetos/Gastos/Views/Fornecedor/Criar.cshtml]

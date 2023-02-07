@@ -4,6 +4,7 @@ using Gastos.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gastos.Migrations
 {
     [DbContext(typeof(GastosContext))]
-    partial class GastosContextModelSnapshot : ModelSnapshot
+    [Migration("20230207002009_CriacaoTabelaGasto")]
+    partial class CriacaoTabelaGasto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,7 +55,25 @@ namespace Gastos.Migrations
                     b.ToTable("Catalogos");
                 });
 
-            modelBuilder.Entity("Gastos.Models.Despesa", b =>
+            modelBuilder.Entity("Gastos.Models.Fornecedor", b =>
+                {
+                    b.Property<string>("Codigo")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Local")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Codigo");
+
+                    b.ToTable("Fornecedores");
+                });
+
+            modelBuilder.Entity("Gastos.Models.Gasto", b =>
                 {
                     b.Property<string>("Codigo")
                         .HasColumnType("nvarchar(450)");
@@ -82,25 +103,7 @@ namespace Gastos.Migrations
 
                     b.HasIndex("pessoaCodigo");
 
-                    b.ToTable("Despesas");
-                });
-
-            modelBuilder.Entity("Gastos.Models.Fornecedor", b =>
-                {
-                    b.Property<string>("Codigo")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Local")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Codigo");
-
-                    b.ToTable("Fornecedores");
+                    b.ToTable("Gastos");
                 });
 
             modelBuilder.Entity("Gastos.Models.Pessoa", b =>
@@ -130,7 +133,7 @@ namespace Gastos.Migrations
                     b.Navigation("fornecedor");
                 });
 
-            modelBuilder.Entity("Gastos.Models.Despesa", b =>
+            modelBuilder.Entity("Gastos.Models.Gasto", b =>
                 {
                     b.HasOne("Gastos.Models.Pessoa", "pessoa")
                         .WithMany()

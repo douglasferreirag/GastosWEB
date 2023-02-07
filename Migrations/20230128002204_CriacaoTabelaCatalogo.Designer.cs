@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gastos.Migrations
 {
     [DbContext(typeof(GastosContext))]
-    [Migration("20230127011356_CriacaoTabelaCatalogo")]
+    [Migration("20230128002204_CriacaoTabelaCatalogo")]
     partial class CriacaoTabelaCatalogo
     {
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace Gastos.Migrations
 
                     b.HasIndex("fornecedorCodigo");
 
-                    b.ToTable("Catalogo");
+                    b.ToTable("Catalogos");
                 });
 
             modelBuilder.Entity("Gastos.Models.Fornecedor", b =>
