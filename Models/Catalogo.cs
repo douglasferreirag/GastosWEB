@@ -13,7 +13,7 @@ namespace Gastos.Models
     {
 
             [Key]
-             public string Codigo { get; set; }
+            public string Codigo { get; set; }
 
             [Required]
             public string Descricao { get; set; }
@@ -30,7 +30,7 @@ namespace Gastos.Models
              [ForeignKey("Fornecedor"), Column(Order = 1)]
             [Required]
             public string CodigoFornecedor{ get; set; }
-            public virtual Fornecedor fornecedor{ get; set; }
+            public virtual Fornecedor fornecedor{ get; set; }    
         
     }
 }

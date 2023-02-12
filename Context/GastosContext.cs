@@ -25,5 +25,7 @@ namespace Gastos.Context
 
           public DbSet<Despesa> Despesas{get; set; }
 
+          public DbSet<Item> Itens{get; set; }
+
     }
 }
