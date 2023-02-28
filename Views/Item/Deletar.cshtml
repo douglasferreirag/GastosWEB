@@ -1,0 +1,85 @@
+@model Gastos.Models.Item
+
+@{
+
+    ViewData["Title"] = "Deletar um registro de ítem";
+
+}
+
+<h1>Deletar registro de ítem</h1>
+
+<br/>
+
+<div class = "row">
+
+      <div class = "row-md-4">
+
+          <form asp-action = "deletar">
+
+              <div class = "form--group">
+
+                      <label asp-for = "Codigo" class = "control-label"></label>
+
+                       <input asp-for = "Codigo" class = "form-control" readonly = "true"/>
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "CodigoCatalogo" class = "control-label"></label>
+
+                       <input asp-for = "CodigoCatalogo" class = "form-control" readonly = "true"/>
+
+              </div>
+
+               <div class = "form--group">
+
+                      <label asp-for = "CodigoDespesa" class = "control-label"></label>
+
+                       <input asp-for = "CodigoDespesa" class = "form-control" readonly = "true"/>
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "Quantidade" class = "control-label"></label>
+
+                       <input asp-for = "Quantidade" class = "form-control" readonly = "true"/>
+
+              </div>
+
+              <div class = "form--group">
+
+                      <label asp-for = "Total" class = "control-label"></label>
+
+                       <input asp-for = "Total" class = "form-control" readonly = "true"/>
+
+              </div>
+
+              
+
+              <br>
+
+              <div class = "form-group">
+
+                      <input type = "submit"  value = "Deletar" class = "btn  btn-primary"/>
+
+              </div>
+
+          </form>
+
+      </div>
+
+
+</div>
+
+</hr>
+<br>
+
+<div>
+
+    <a asp-action = "Index" >Voltar </a>
+
+</div>
+
+

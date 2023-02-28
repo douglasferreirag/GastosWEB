@@ -55,18 +55,26 @@
                               
                                 <option >Selecione</option>
 
-                                @foreach (var item in ViewBag.fornecedor)
+                                @foreach (var item in ViewBag.fornecedores)
                                 {
 
                                             @if (@item.Codigo == ViewBag.CodigoFornecedor)
                                             {
 
                                                 <option selected > @item.Codigo </option>
+                                                
+                                                continue;
 
-                                            }
+                                            } 
+                                          
+                                           
 
-                                                            <option  >@item.Codigo </option>
-                                                            
+                                                      <option  >@item.Codigo </option>
+                                                             
+
+                                          
+
+                                                  
 
                                 
                                 }

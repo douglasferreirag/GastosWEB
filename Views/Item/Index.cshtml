@@ -1,0 +1,127 @@
+@model IEnumerable<Gastos.Models.Item>
+
+@{
+
+      ViewData["Title"] = "Listagem de catálogo";
+
+}
+
+<h2>Ítem</h2>
+
+<p><a asp-action = "Criar">Novo registro de ítem</a></p>
+
+
+
+<table class = "table">
+
+        <thead>
+
+              <tr>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Codigo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.CodigoCatalogo)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.CodigoDespesa)
+
+                  </th>
+
+                  <th>
+
+                        @Html.DisplayNameFor(model  => model.Quantidade)
+
+                  </th>
+
+                   <th>
+
+                        @Html.DisplayNameFor(model  => model.Total)
+
+                  </th>
+
+                  
+
+                  
+
+                  <th></th>
+
+            </tr>
+
+            
+
+        </thead>
+
+        <tbody>
+
+              @foreach (var item in Model)
+              {
+                
+                        <tr>
+
+                                    <td>
+
+                                           @Html.DisplayFor(model  => item.Codigo)
+
+                               
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.CodigoCatalogo)   
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.CodigoDespesa)
+
+
+                                    </td>
+
+                                      <td>
+
+                                          @Html.DisplayFor(model  => item.Quantidade)
+
+
+                                    </td>
+
+                                    <td>
+
+                                          @Html.DisplayFor(model  => item.Total)
+
+
+                                    </td>
+
+                         
+
+                                    <td>
+
+                                           
+                                          <a asp-action = "Editar" asp-route-Codigo= "@item.Codigo" >Editar</a> |
+                                          <a asp-action = "Detalhes" asp-route-Codigo = "@item.Codigo">Detalhes</a> |
+                                          <a asp-action = "Deletar" asp-route-Codigo = "@item.Codigo">Deletar</a> 
+                                    
+                                    </td>
+
+                        </tr>
+
+
+              }
+
+        </tbody>
+
+</table>
+
+  
+
+  
